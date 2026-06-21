@@ -2,9 +2,13 @@
 #include "inc/Student.hpp"
 
 int main() {
-    Student s("Jan", 5);
-    std::cout << "Student: " << s.pobierzImie() << ", Ocena: " << s.pobierzOcene() << std::endl;
+    // Polimorfizm dynamiczny (T0-24-3): 
+    // Wskaźnik klasy bazowej wskazuje na obiekt klasy pochodnej
+    Student* s = new StudentInformatyki("Jan", 5);
     
-    // błąd kompilacji: s.ocena = 2; // Nie mamy dostępu, bo jest private!
+    // Dzięki metodzie wirtualnej wywoła się wersja dla StudentInformatyki
+    s->wyswietlInfo(); 
+    
+    delete s;
     return 0;
 }
