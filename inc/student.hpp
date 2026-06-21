@@ -10,10 +10,10 @@ private:
     int wiek;
 
 protected:
-    int punktyKredytowe;
+    mutable int punktyKredytowe;
 
 public:
-    Student(std::string p_imie, int p_ocena);
+    Student(std::string p_imie, int p_ocena, int p_wiek);
     virtual ~Student() {}
 
     std::string pobierzImie() const;
@@ -28,7 +28,7 @@ class StudentInformatyki : public Student {
 private:
     std::string ulubionyJezyk;
 public:
-    StudentInformatyki(std::string p_imie, int p_ocena, std::string p_jezyk);
+    StudentInformatyki(std::string p_imie, int p_ocena, int p_wiek, std::string p_jezyk);
 
     void wyswietlInfo() const override;
 };
