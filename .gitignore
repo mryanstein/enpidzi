@@ -1,5 +1,3 @@
-# Ignoruj pliki wykonywalne Windowsa
 *.exe
-
-# Ignoruj folder z plikami budowania (jeśli się pojawi)
+.vscode/
 build/
