@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(inc)
 
 # Automatycznie zbieramy wszystkie pliki źródłowe z głównego folderu oraz z 'src'
-file(GLOB_RECURSE SOURCES "*.cpp" "src/*.cpp")
+file(GLOB SOURCES "src/*.cpp")
 
 # Tworzymy plik wykonywalny o nazwie "Program" z zebranych źródeł
 add_executable(Program ${SOURCES})

@@ -31,7 +31,7 @@ public:
     void display() const;
 
     // TODO 3: W pliku CPP znajduje się metoda modifyBuffer. Zobacz, że wskaźnik 'this' można wykorzystać
-    // do odwołania się do bieżącego obiektu, ale w stałej metodzie (np. display) nie można przez niego modyfikować pól!
+    // do odwołania się do bieżącego obiektu, ale w stałej metodzie (np. display) nie można przez niego modyfikować pól
 };
 
 // 6. INTELIGENTNE WSKAŹNIKI [cite: 165, 168]
